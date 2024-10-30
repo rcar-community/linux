@@ -9,6 +9,7 @@ config VIDEO_RCAR_ISP
 	select VIDEO_V4L2_SUBDEV_API
 	select RESET_CONTROLLER
 	select V4L2_FWNODE
+	select VIDEO_DCT_RPPX1
 	help
 	  Support for Renesas R-Car Image Signal Processor (ISP).
 	  Enable this to support the Renesas R-Car Image Signal
