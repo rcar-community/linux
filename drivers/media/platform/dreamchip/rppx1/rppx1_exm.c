@@ -78,7 +78,7 @@ rppx1_exm_param_rkisp1(struct rpp_module *mod,
 	 * 5 - after defect pixel correction
 	 * 6 - after denoising
 	 */
-	write(priv, mod->base + EXM_CHANNEL_SEL_REG, 0);
+	write(priv, mod->base + EXM_CHANNEL_SEL_REG, 6);
 
 	if (arg->mode == RKISP1_CIF_ISP_EXP_MEASURING_MODE_0) {
 		/* Coefficients for a BT.601 BAYER (from datasheet). */
