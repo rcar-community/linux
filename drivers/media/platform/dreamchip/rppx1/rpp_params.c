@@ -19,6 +19,7 @@ int rppx1_params_rkisp1(struct rppx1 *rpp, struct rkisp1_ext_params_cfg *cfg,
 		const union rppx1_params_rkisp1_config *block =
 			(const union rppx1_params_rkisp1_config *)&cfg->data[block_offset];
 		struct rpp_module *module;
+		int ret;
 
 		block_offset += block->header.size;
 
@@ -27,7 +28,7 @@ int rppx1_params_rkisp1(struct rppx1 *rpp, struct rkisp1_ext_params_cfg *cfg,
 			module = &rpp->pre1.bls;
 			break;
 		case RKISP1_EXT_PARAMS_BLOCK_TYPE_AWB_GAIN:
-			module = &rpp->post.awbg;
+			module = &rpp->pre1.awbg;
 			break;
 		case RKISP1_EXT_PARAMS_BLOCK_TYPE_FLT:
 		case RKISP1_EXT_PARAMS_BLOCK_TYPE_BDM:
@@ -67,7 +68,11 @@ int rppx1_params_rkisp1(struct rppx1 *rpp, struct rkisp1_ext_params_cfg *cfg,
 			continue;
 		}
 
-		rpp_module_call(module, param_rkisp1, block, write, priv);
+		ret = rpp_module_call(module, param_rkisp1, block, write, priv);
+		if (ret) {
+			pr_err("Error processing RPPX1 block type: 0x%04x\n", block->header.type);
+			return ret;
+		}
 	}
 
 	return 0;

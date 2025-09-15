@@ -9,6 +9,7 @@
 
 #include <linux/io.h>
 #include <linux/module.h>
+#include <linux/slab.h>
 
 #include "rppx1.h"
 
