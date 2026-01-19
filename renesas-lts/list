@@ -1,9 +1,11 @@
+v6.13     / pwm: Provide new consumer API functions for waveforms
+v6.13     / pwm: New abstraction for PWM waveforms
+v6.13     / pwm: Add more locking
 v6.18     / media: vsp1: Export missing vsp1_isp_free_buffer symbol
 v6.17     / media: vsp1: Add missing export.h
 Local     / media: i2c: imx219: Replace exposure magic value with named constant
 Local     / media: i2c: imx219: Propagate errors from control range updates
 Local     / media: i2c: imx219: Simplify imx219_get_binning() function
-Local     / media: i2c: imx219: Fix 1920x1080 mode to use 1:1 pixel aspect ratio
 v6.18     / media: i2c: imx: Add note to prevent buggy code re-use
 v6.17     / media: Remove redundant pm_runtime_mark_last_busy() calls
 v6.16     / media: i2c: imx219: media: i2c: imx219: Enable runtime PM autosuspend
