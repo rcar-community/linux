@@ -1,3 +1,16 @@
+Local     / arm64: dts: renesas: sparrow-hawk: Add overlay for Olimex MIPI-HDMI adapter
+Local     / arm64: dts: renesas: sparrow-hawk: Add overlay for WaveShare Display 13.3"
+Local     / dt-bindings: display: bridge: waveshare,dsi2dpi: Document 1..4 DSI lane support
+v6.18     / dt-bindings: display: bridge: Add waveshare DSI2DPI unit support
+Local     / drm/panel: simple: Add Waveshare 13.3" panel support
+Local     / drm/bridge: waveshare-dsi: Fix signedness bug
+Local     / drm/bridge: waveshare-dsi: Add support for 1..4 DSI data lanes
+Local     / drm/bridge: waveshare-dsi: Register and attach our DSI device at probe
+v6.18     / drm/bridge: waveshare-dsi: Fix bailout for devm_drm_bridge_alloc()
+v6.18     / drm: bridge: Add waveshare DSI2DPI unit driver
+Local     / Input: ili210x - add support for polling mode
+Local     / dt-bindings: touchscreen: trivial-touch: Drop 'interrupts' requirement for old Ilitek
+Local     / Input: ili210x - convert to dev_err_probe()
 v6.19     / media: v4l2-core: Introduce v4l2-isp.c
 v6.19     / media: uapi: Introduce V4L2 generic ISP types
 Local     / mailbox: remove unneeded double quotation
@@ -267,7 +280,6 @@ v6.14     / ASoC: Use of_property_present() for non-boolean properties
 v6.14     / ASoC: simple-card-utils: Unify clock direction by clk_direction
 v6.14     / ASoC: simple-card-utils: use for_each_of_graph_port() on graph_get_dai_id()
 v6.14     / ASoC: simple-card-utils: check port reg first on graph_get_dai_id()
-v6.14     / ASoC: simple-card-utils: use __free(device_node) for device node
 v6.13     / ASoC: simple-card-utils: care simple_util_dai for dummy DAI
 v6.13     / ASoC: test-component: Support continuous rates for test component
 v6.15     / dt-bindings: timer: renesas,tpu: remove obsolete binding
