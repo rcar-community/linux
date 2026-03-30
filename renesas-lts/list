@@ -1,5 +1,6 @@
 Local     / arm64: dts: renesas: sparrow-hawk: Add overlay for Olimex MIPI-HDMI adapter
 Local     / arm64: dts: renesas: sparrow-hawk: Add overlay for WaveShare Display 13.3"
+Local     / drm/bridge: waveshare-dsi: Fix signedness bug
 Local     / drm/panel: simple: Add Waveshare 13.3" panel support
 Local     / drm/bridge: waveshare-dsi: Add support for 1..4 DSI data lanes
 Local     / dt-bindings: display: bridge: waveshare,dsi2dpi: Document 1..4 DSI lane support
