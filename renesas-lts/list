@@ -1,3 +1,4 @@
+Local     / arm64: dts: renesas: sparrow-hawk: Reserve first 128 MiB of DRAM
 Local     / arm64: dts: renesas: sparrow-hawk: Add overlay for Olimex MIPI-HDMI adapter
 Local     / arm64: dts: renesas: sparrow-hawk: Add overlay for WaveShare Display 13.3"
 Local     / dt-bindings: display: bridge: waveshare,dsi2dpi: Document 1..4 DSI lane support
