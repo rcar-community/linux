@@ -1,3 +1,4 @@
+Local     / arm64: dts: renesas: sparrow-hawk: Reserve first 128 MiB of DRAM
 Local     / mailbox: correct kdoc title for mbox_bind_client
 Local     / mailbox: test: really ignore optional memory resources
 Local     / mailbox: remove superfluous internal header
